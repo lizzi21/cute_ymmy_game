@@ -289,7 +289,21 @@ img {
       no-repeat center;
     background-size: cover;
     z-index: 48;
+    cursor: pointer;
   }
+
+  .group-d2 {
+    position: absolute; 
+    width: 160px; 
+    height: 30px; 
+    left: 770px; 
+    top: -157px; 
+    background: url(./imag/Group\ 135.png) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+    display: none;
+}
+
   .rectangle-e {
     position: absolute;
     width: 120px;
@@ -310,7 +324,23 @@ img {
       no-repeat center;
     background-size: cover;
     z-index: 51;
+    cursor: pointer;
   }
+
+  .group-f2 {
+    position: absolute; 
+    width: 150px; 
+    height: 40px; 
+    left: 620px; 
+    top: -160px; 
+    background: url(./imag/Group\ 127.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 51;
+    display: none;
+  }
+
+
   .flex-row-10 {
     display: flex;
     align-items: center;
@@ -331,7 +361,7 @@ img {
     background-size: cover;
     z-index: 46;
   }
-  .group-12 {
+  .g12 {
     position: relative;
     width: 74px;
     height: 36.5px;
@@ -340,7 +370,23 @@ img {
       no-repeat center;
     background-size: cover;
     z-index: 50;
+    cursor: pointer;
   }
+
+  .g122 {
+    position: absolute;
+    width: 74px;
+    height: 36.5px;
+    left: 560px;
+    top: -250px;
+    background: url(./imag/Group\ 138.png) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+    visibility: hidden;
+}
+
+
+
   .rectangle-13 {
     flex-shrink: 0;
     position: relative;
@@ -368,29 +414,30 @@ img {
     margin: -8px 0 0 37px;
     z-index: 55;
   }
+  
   .rectangle-16 {
     position: absolute;
     width: 120px;
     height: 115px;
     top: 0;
     left: 384px;
-    background: url(./imag/Rectangle\ 62.png)
-      no-repeat center;
+    background: url(./imag/Rectangle\ 62.png) no-repeat center;
     background-size: cover;
     z-index: 42;
   }
   .group-17 {
-    position: relative;
+    position: absolute;
     width: 95.5px;
     height: 91px;
     margin: 17px 0 0 7px;
-    background: url(./imag/Group\ 108.png)
-      no-repeat center;
+    background: url(./imag/Group\ 108.png) no-repeat center;
     background-size: cover;
     z-index: 43;
-    
-    
+    cursor: pointer;
+    transition: transform 1s ease, left 1s ease, top 1s ease;
   }
+  
+
   .w {
     position: absolute;
     width: 98px;
@@ -782,10 +829,10 @@ button:hover {
 
   .po2 {
     position: absolute;
-    width: 525px;
-    height: 699px;
-    top: 270px;
-    left: 610px;
+    width: 480px;
+    height:599px;
+    top: 340px;
+    left: 650px;
     background: url(./imag/po\ 2.png)
       no-repeat center;
     background-size: cover;

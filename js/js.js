@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Функция для перетаскивания
+
 function makeDraggable(element) {
     let isDragging = false;
     let offsetX, offsetY;
@@ -42,7 +42,7 @@ function makeDraggable(element) {
       isDragging = true;
       offsetX = e.clientX - element.getBoundingClientRect().left;
       offsetY = e.clientY - element.getBoundingClientRect().top;
-      document.body.style.userSelect = "none"; // Отключаем выделение текста
+      document.body.style.userSelect = "none"; 
     });
   
     document.addEventListener("mousemove", (e) => {
@@ -54,11 +54,11 @@ function makeDraggable(element) {
   
     document.addEventListener("mouseup", () => {
       isDragging = false;
-      document.body.style.userSelect = "auto"; // Включаем выделение текста
+      document.body.style.userSelect = "auto"; 
     });
   }
   
-  // Применяем к каждому объекту
+ 
   const group25 = document.querySelector(".group-25");
   const group26 = document.querySelector(".group-26");
   const groupB = document.querySelector(".group-b");
@@ -71,24 +71,23 @@ function makeDraggable(element) {
   
 
   document.querySelector('.group-24').addEventListener('click', function() {
-    // Активируем анимацию для каждого объекта
+    
     document.querySelectorAll('.vector, .vector-27, .vector-28, .vector-29, .vector-2a').forEach(function(element, index) {
       setTimeout(function() {
-        // Показать элемент
+        
         element.style.opacity = 1;
-        element.style.top = parseInt(element.style.top) + 50 + 'px'; // Поднять немного вверх
-        element.style.left = parseInt(element.style.left) + (Math.random() * 100 - 50) + 'px'; // Сдвигаем в случайную сторону
-  
-        // Падение элемента (на 80px вниз)
+        element.style.top = parseInt(element.style.top) + 50 + 'px';
+        element.style.left = parseInt(element.style.left) + (Math.random() * 100 - 50) + 'px'; 
+        
         setTimeout(function() {
-          element.style.top = parseInt(element.style.top) + 80 + 'px'; // Падение вниз
-        }, 1000); // Падение начинается через 1 секунду
+          element.style.top = parseInt(element.style.top) + 80 + 'px'; 
+        }, 1000); 
   
-        // Пропадание элемента
+        
         setTimeout(function() {
-          element.style.opacity = 0; // Элемент исчезает
-        }, 700); // Элемент исчезает через 2 секунды
-      }, index * 100); // Задержка для каждого объекта
+          element.style.opacity = 0; 
+        }, 700); 
+      }, index * 100); 
     });
   });
   
@@ -102,26 +101,26 @@ function makeDraggable(element) {
 
 
 function scrollAndShowModal() {
-    // Прокрутка страницы вниз
+    
     window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth"
     });
 
-    // Показать модальное окно
+   
     document.getElementById("modal").style.display = "block";
 }
 
 function closeModal() {
-    // Закрыть модальное окно
+   
     document.getElementById("modal").style.display = "none";
 }
 
 function submitName() {
     const name = document.getElementById("name-input").value;
-    alert("You entered: " + name); // Место, где будет обработано имя
+    alert("You entered: " + name); 
 
-    // Закрыть модальное окно после отправки
+   
     closeModal();
 }
 
@@ -151,4 +150,28 @@ document.querySelector('.op').addEventListener('click', function() {
 
  
 
+  document.querySelector('.group-d').addEventListener('click', function() {
+    var groupD2 = document.querySelector('.group-d2'); 
+    groupD2.style.display = groupD2.style.display === 'none' || groupD2.style.display === '' ? 'block' : 'none';
+});
 
+document.querySelector('.group-f').addEventListener('click', function() {
+  var groupF2 = document.querySelector('.group-f2'); 
+  groupF2.style.display = groupF2.style.display === 'none' || groupF2.style.display === '' ? 'block' : 'none';
+});
+
+document.querySelector('.g2').addEventListener('click', function() {
+  var g122 = document.querySelector('.g122');
+  g122.style.visibility = g122.style.visibility === 'hidden' ? 'visible' : 'hidden';
+});
+
+
+
+
+
+
+const group = document.querySelector('.group-17');
+
+group.addEventListener('click', function() {
+  group.classList.add('animate');
+});
